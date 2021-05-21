@@ -6,12 +6,10 @@ client.login(config.token);
 
 client.on('ready', () => {
     const readyEvent = require('./events/ready');
-    readyEvent(client); //now this works also
+    readyEvent(client); 
 });
 
 client.on('message', (message) => {
     const messageEvent = require('./events/messages');
-    messageEvent(message, client, config); //lets the file use message and the client
+    messageEvent(message, client, config); 
 });
-//now lets try!
-//now lets make another command.
