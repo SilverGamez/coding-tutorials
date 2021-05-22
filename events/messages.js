@@ -22,7 +22,7 @@ module.exports = async(message, client, config) => {
     } else if(cmd === 'suggest'){
         command = require('../commands/suggest');
         command(message, args, client);
-    } else if(cmd === 'avatar' || cmd === 'av'){//using || between cmds are able to let multi cmds run this command, for example. if i run !av or !avatar. i both get the same command. But lets test out this command!
+    } else if(cmd === 'avatar' || cmd === 'av'){
         command = require('../commands/avatar');
         command(message, args, client);
     }
