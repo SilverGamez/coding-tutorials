@@ -19,6 +19,8 @@ module.exports = async(message, client, config) => {
     } else if(cmd === 'ping'){
         command = require('../commands/ping');
         command(message, args, client);
+    } else if(cmd === 'suggest'){
+        command = require('../commands/suggest');
+        command(message, args, client);
     }
-    //now we can test it
 }
