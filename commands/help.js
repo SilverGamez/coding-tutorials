@@ -10,6 +10,7 @@ module.exports = async(message, args, client) => {
     .addField('!say <text>', 'Copies your text and sends it')
     .addField('!test', 'Sends test') 
     .addField('!suggest <suggestion>', 'Creates a suggestion for that server')
+    .addField('!avatar <@user>', 'Shows the users avatar')
     .setTimestamp()
 
     message.channel.send(embed);
