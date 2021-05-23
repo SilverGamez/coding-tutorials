@@ -25,5 +25,8 @@ module.exports = async(message, client, config) => {
     } else if(cmd === 'avatar' || cmd === 'av'){
         command = require('../commands/avatar');
         command(message, args, client);
+    } else if(cmd === '8ball'){
+        command = require('../commands/8ball');
+        command(message, args, client);
     }
 }
