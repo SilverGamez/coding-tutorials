@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "discord.js": "^12.5.3",
-    "discord.js-avatar": "^1.0.0"
+    "discord.js-avatar": "^1.0.0",
+    "reconlx": "^1.2.41"
   },
   "name": "coding-tutorial",
   "version": "1.0.0",

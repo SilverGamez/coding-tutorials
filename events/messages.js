@@ -28,5 +28,8 @@ module.exports = async(message, client, config) => {
     } else if(cmd === '8ball'){
         command = require('../commands/8ball');
         command(message, args, client);
+    } else if(cmd === 'hangman'){
+        command = require('../commands/hangman');
+        command(message, args, client);
     }
 }
