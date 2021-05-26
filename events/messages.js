@@ -31,5 +31,8 @@ module.exports = async(message, client, config) => {
     } else if(cmd === 'hangman'){
         command = require('../commands/hangman');
         command(message, args, client);
+    } else if(cmd === 'eval'){
+        command = require('../commands/eval');
+        command(message, args, client);
     }
 }

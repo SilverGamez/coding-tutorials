@@ -13,6 +13,7 @@ module.exports = async(message, args, client) => {
     .addField('!avatar <@user>', 'Shows the users avatar')
     .addField('!8ball <question>', 'Magic 8ball!')
     .addField('!hangman <channel(optional)> <word>', 'Creates a hangman for your friends to play!')
+    .addField('!eval <code>', 'Runs code.')
     .setTimestamp()
 
     message.channel.send(embed);
